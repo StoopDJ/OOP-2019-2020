@@ -15,6 +15,20 @@ public class Cat extends Animal
 
     public void speak()
     {
-        System.out.println("Meow!");
+        System.out.println(" Meow!");
+    }
+
+    public void kill()
+    {
+        this.numLives = numLives - 1;
+
+        if(numLives > 0)
+        {
+            System.out.println(" ouch");
+        }
+        else 
+        {
+            System.out.println(" Dead");
+        }
     }
 }
