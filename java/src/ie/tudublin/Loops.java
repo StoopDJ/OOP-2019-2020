@@ -85,7 +85,7 @@ public class Loops extends PApplet
 
 	public void draw()
 	{	
-<<<<<<< HEAD
+
 		noStroke();
 			colorMode(HSB, 500);
 			for (int i = 0; i < 500; i++) {
@@ -96,7 +96,6 @@ public class Loops extends PApplet
 			}
 		
 	
-=======
 		background(0);		
 		colorMode(HSB);
 		//loops1();
@@ -104,6 +103,5 @@ public class Loops extends PApplet
 		loops2();
 
 		//loops3();
->>>>>>> eb73adade4ee29c79cd5220fe94af6f2d6fec7c9
 	}
 }
