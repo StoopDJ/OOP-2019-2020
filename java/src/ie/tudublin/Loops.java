@@ -2,18 +2,23 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
+
+
 public class Loops extends PApplet
 {	
+	int OFF_MAX = 300;
+
 	public void settings()
 	{
 		size(500, 500);
-	
+		
+		
 	}
 
 	public void setup() 
 	{
-		background(255);
-		
+	
+				
 	}
 
 	
@@ -49,16 +54,20 @@ public class Loops extends PApplet
 		*/
 		
 		public void draw() {
-			//int x = 0;
-			int x=0;
-			stroke(0);
-			// x is available! Since it is declared within the draw() block of code, it is available here. 
-			// Notice, however, that it is not available inside draw() above where it is declared. 
-			// Also, it is available inside the while block of code because while is inside of draw().
-			while (x < width) {
-			  stroke(0);
-			  line(x,0,x,height);
-			  x += 15;
-			} 
-		}	
+
+			background(0);
+			translate(width / 2, height /2, 0);
+
+			for(int xo = -OFF_MAX; xo <= OFF_MAX; xo += 50 ){
+				
+				pushMatrix();
+				translate(xo, 0,0);
+				box(30);
+				popMatrix();
+			}
+		}
+
+
+			
+			
 }
