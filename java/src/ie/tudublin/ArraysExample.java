@@ -1,8 +1,10 @@
 package ie.tudublin;
 
+import java.beans.VetoableChangeSupport;
 import java.util.Arrays; 
-import java.util.Collections; 
+import java.util.Collections;
 
+import javafx.scene.chart.ValueAxis;
 import processing.core.PApplet;
 
 public class ArraysExample extends PApplet
@@ -64,16 +66,39 @@ public class ArraysExample extends PApplet
 
 	void drawBarChart()
 	{
+		int cushion = 60;
+		int cushionx = 20; 
 		float w = width / (float) rainFall.length;
 		float cGap = 255 / (float) rainFall.length;
-		noStroke();
+		stroke(255);
 		colorMode(HSB);
+
+
+		line(cushion, cushion, cushion, width - cushion);
+		line(cushion, height - cushion, width - cushion, height - cushion);
+
 		for(int i = 0 ; i < rainFall.length ; i ++)
 		{
-			float x = i * w;
-			fill(i * cGap, 255, 255);
-			rect(x, height, w, -rainFall[i]);
+			float x = map(i,  0, rainFall.length-1, cushion, width-cushion);
+			stroke(255);
+			line(x, height-cushion + 3, x, height-cushion -3);
+			stroke(255);
+			text(months[i], x, width - cushionx);
+			
 		}
+
+		for(int f = 0 ; f < rainFall.length+1 ; f ++)
+		{
+			float y = map(f,  0, rainFall.length, width-cushion, cushion);
+			stroke(255);
+
+			line(cushion-3, y, cushion+3,y);
+
+			stroke(255);
+			text(f * 10, cushionx, y);
+
+		}
+
 	}
 
 	public void keyPressed()
