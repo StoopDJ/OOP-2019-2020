@@ -38,7 +38,7 @@ public class Wave extends PApplet
         float sz = map(sin((float) (a*1.7))*sin((float) (a*2.3)), -1, 1, 5, 30);
         float bri = map(sin((float) (a * 1.3)) * sin((float) (a * 4.1)), -1, 1, 10, 60);
 
-        fill(co,50, bri);
+        fill(co,150, bri);
         ellipse(x, y, sz, sz);
 
         a = (float) (a + 0.03);

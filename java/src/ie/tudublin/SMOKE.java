@@ -30,13 +30,14 @@ public class SMOKE extends PApplet
 	public void draw()
 	{
 		if (random(100) > 50) {
-			stroke(255);
+			stroke(255,255,0);
 		  } else {
-			stroke(255);
+			stroke(255,0,255);
 		  }
 		  float r = random(100);
 		  ellipse(200, 200, r, r);
-		  copy(0, 0, width, height, -3, -2, width + 5, height + 3);
+		  copy(0, 0, width, height, -3, -2, width -5 , height + 3);
+
 	}
 	
 	

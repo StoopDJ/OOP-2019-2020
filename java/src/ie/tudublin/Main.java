@@ -27,10 +27,37 @@ public class Main
         processing.core.PApplet.runSketch(a, new Loops());
     }
 
+    public void pixels() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new pixels());
+    }
+
+    public void Drawing() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Drawing());
+    }
+
     public void Circle() {
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new Circle());
     }
+
+    
+    public void ACID() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new ACID());
+    }
+
+    public void Rain() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Rain());
+    }
+
+    public void flashing() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new flashing());
+    }
+
 
     public void bugZap() {
         final String[] a = { "MAIN" };
@@ -79,6 +106,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.Wave();       
+		main.pixels();       
     }
 }
