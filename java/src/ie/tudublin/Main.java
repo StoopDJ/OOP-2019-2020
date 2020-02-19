@@ -9,9 +9,27 @@ public class Main
         processing.core.PApplet.runSketch(a, new HelloProcessing());
     }
 
+    public void SMOKE()
+	{
+		final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new SMOKE());
+    }
+
+    public void Wave()
+	{
+		final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Wave());
+    }
+
+
     public void loops() {
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new Loops());
+    }
+
+    public void Circle() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Circle());
     }
 
     public void bugZap() {
@@ -27,9 +45,6 @@ public class Main
     public void dogsCats() {
         // Polymorphism means
         // The type is a superclass, the instance is a subclass
-
-        // This is not polymorphism
-        final Cat topcat = new Cat("Topcat");
 
         // This is polymorphism!
         Animal mino = new Cat("Mino");
@@ -64,6 +79,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.loops();        
+		main.Wave();       
     }
 }
