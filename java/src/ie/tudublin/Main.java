@@ -35,7 +35,7 @@ public class Main
         // The type is a superclass, the instance is a subclass
 
         // This is not polymorphism
-        final Cat topcat = new Cat("Topcat");
+       // final Cat topcat = new Cat("Topcat");
 
         // This is polymorphism!
         Animal mino = new Cat("Mino");
@@ -67,17 +67,9 @@ public class Main
         // a & b are object references
 
     }
-<<<<<<< HEAD
 
-    public static void main(final String[] arg) {
-        final Main main = new Main();
-		main.loops();        
-=======
-    
-    public static void main(String[] arg)
-    {
+    public static void main(String[] arg){
         Main main = new Main();
 		main.helloArrays();        
->>>>>>> bc739643777622fa1f895bc0b8ef265557242b73
     }
 }
