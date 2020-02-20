@@ -53,9 +53,9 @@ public class Main
         processing.core.PApplet.runSketch(a, new Rain());
     }
 
-    public void flashing() {
+    public void Flashing() {
         final String[] a = { "MAIN" };
-        processing.core.PApplet.runSketch(a, new flashing());
+        processing.core.PApplet.runSketch(a, new Flashing());
     }
 
     public void Rect() {
@@ -75,6 +75,11 @@ public class Main
     public void Lines() {
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new Lines());
+    }
+
+    public void Flip() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Flip());
     }
 
 
@@ -125,6 +130,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.();      
+		main.Flip();      
     }
 }
