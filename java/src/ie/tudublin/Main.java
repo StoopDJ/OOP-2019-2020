@@ -58,6 +58,19 @@ public class Main
         processing.core.PApplet.runSketch(a, new flashing());
     }
 
+    public void Rect() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Rect());
+    }
+
+    public void Bright() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Bright());
+    }
+    public void SRect() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new SRect());
+    }
     
     public void Lines() {
         final String[] a = { "MAIN" };
@@ -112,6 +125,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.Lines();      
+		main.();      
     }
 }
