@@ -58,6 +58,12 @@ public class Main
         processing.core.PApplet.runSketch(a, new flashing());
     }
 
+    
+    public void Lines() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Lines());
+    }
+
 
     public void bugZap() {
         final String[] a = { "MAIN" };
@@ -106,6 +112,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.Rain();      
+		main.Lines();      
     }
 }
