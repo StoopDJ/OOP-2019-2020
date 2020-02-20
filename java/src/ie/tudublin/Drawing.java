@@ -18,9 +18,9 @@ public class Drawing extends PApplet
 		
 		//noFill();
 		//smooth();
-        colorMode(HSB);
+        colorMode(HSB,30);
         stroke(255,0,255);
-        background(255);
+        background(0);
         smooth();
         strokeWeight(3);
 		
