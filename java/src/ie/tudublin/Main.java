@@ -71,6 +71,11 @@ public class Main
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new SRect());
     }
+
+    public void Star() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Star());
+    }
     
     public void Lines() {
         final String[] a = { "MAIN" };
@@ -130,6 +135,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.Flip();      
+		main.Star();      
     }
 }
