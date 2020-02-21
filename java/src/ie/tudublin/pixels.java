@@ -5,6 +5,9 @@ import processing.core.PApplet;
 public class pixels extends PApplet
 {	
 
+	private static final char ACIDMAN = 0;
+
+
 	public void settings()
 	{
 		size(500, 500);
@@ -38,9 +41,10 @@ public class pixels extends PApplet
         loadPixels();
 
         for(int i = 0; i < pixels.length; i++) {
-          pixels[i] = color(random(255));
+          pixels[i] = color(random(0,255));
         }
-        
-        updatePixels();
+		updatePixels();
+		text("ACIDMAN",200, 200);
+		fill(HSB);
     }
 }

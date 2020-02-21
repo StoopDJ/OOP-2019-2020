@@ -45,6 +45,10 @@ public class Drawing extends PApplet
         
         float x1 = map(sin(b), -1, 1, 20, width - 20);
         float y1 = map(cos(b), -1, 1, 20, height - 20);
+
+        scale(0.5f* map(mouseY, 0, height,0, 10));
+
+        
         
         //background(100);
         //stroke(0);
@@ -59,6 +63,7 @@ public class Drawing extends PApplet
         co = co + 1;
         if (co > 100) {
           co = 0;
+        
         }
     }
 }

@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+import java.time.format.TextStyle;
+
 public class Main
 {
 
@@ -87,6 +89,16 @@ public class Main
         processing.core.PApplet.runSketch(a, new Flip());
     }
 
+    public void Blue() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Blue());
+    }
+
+    public void Middle() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Middle());
+    }
+
 
     public void bugZap() {
         final String[] a = { "MAIN" };
@@ -135,6 +147,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.Star();      
+        main.Blue();      
     }
 }
