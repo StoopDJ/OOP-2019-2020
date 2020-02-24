@@ -1,5 +1,3 @@
-
-
 package ie.tudublin;
 
 import processing.core.PApplet;
@@ -43,7 +41,7 @@ public void draw()
         
     noStroke();
     rect(0, 0, width, height);
-   // scale(0.5f* map(mouseY, 0, height,0, 10));
+  
 
     for (int i = 0; i < n; i++)
     {

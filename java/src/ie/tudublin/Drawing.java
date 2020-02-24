@@ -46,7 +46,7 @@ public class Drawing extends PApplet
         float x1 = map(sin(b), -1, 1, 20, width - 20);
         float y1 = map(cos(b), -1, 1, 20, height - 20);
 
-        scale(0.5f* map(mouseY, 0, height,0, 10));
+   
 
         
         
