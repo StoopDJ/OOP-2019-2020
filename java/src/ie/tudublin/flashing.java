@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Flashing extends PApplet
+public class flashing extends PApplet
 {	
     float a = 0;
 	public void settings()

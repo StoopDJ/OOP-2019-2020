@@ -16,7 +16,7 @@ public class Blue extends PApplet
 
 	public void settings()
 	{
-		size(800, 800);
+		fullScreen();
 	}
 
 	public void setup() 

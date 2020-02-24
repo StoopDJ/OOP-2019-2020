@@ -57,7 +57,7 @@ public class Main
 
     public void Flashing() {
         final String[] a = { "MAIN" };
-        processing.core.PApplet.runSketch(a, new Flashing());
+        processing.core.PApplet.runSketch(a, new flashing());
     }
 
     public void Rect() {
