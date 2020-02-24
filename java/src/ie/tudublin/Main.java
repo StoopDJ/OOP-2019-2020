@@ -24,10 +24,24 @@ public class Main
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new BugZap());
     }
+<<<<<<< HEAD
 
     public void airSeaBattle() {
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new AirSeaBattle());
+=======
+    
+    public void sound1()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Sound1());
+    }
+
+    public void airSeaBattle()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new AirSeaBattle());
+>>>>>>> 3f21efb1b5a9d3d0cbafcc1d042aa89f314fd196
     }
 
 <<<<<<< HEAD
@@ -81,6 +95,6 @@ public class Main
 
     public static void main(String[] arg){
         Main main = new Main();
-		main.soundMandala();        
+		main.sound1();        
     }
 }
