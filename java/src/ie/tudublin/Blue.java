@@ -16,7 +16,8 @@ public class Blue extends PApplet
 
 	public void settings()
 	{
-		fullScreen();
+        //fullScreen();
+        size(800, 800);
 	}
 
 	public void setup() 
@@ -29,11 +30,12 @@ public class Blue extends PApplet
 	
 	public void keyPressed()
 	{
-		if (key == ' ')
+        if (key == ' ')
 		{
 			
-		}
-	}	
+        }
+    } 
+        
 
 
 public void draw()
@@ -41,7 +43,7 @@ public void draw()
         
     noStroke();
     rect(0, 0, width, height);
-  
+    
 
     for (int i = 0; i < n; i++)
     {
@@ -88,6 +90,7 @@ void reset()
     {
         reset();
     }
+    
 
 
  }   

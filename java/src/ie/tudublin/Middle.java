@@ -35,13 +35,14 @@ public class Middle extends PApplet
 
 	public void draw()
 	{
-        scale(0.5f* map(mouseY, 0, height,0, 10));
+		//scale(0.5f* map(mouseY, 0, height,0, 10));
+		
         translate(width/2,height/2);
 		rotate(angle);
 		fill(colorscale,97,100);
         rectMode(CENTRE);
-        rect(0,0,200,200);
-
+		rect(0,0,200,200);
+	
         angle += 5;
 
         colorscale = (int) (colorscale +1.5);
