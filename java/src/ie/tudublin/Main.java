@@ -24,13 +24,7 @@ public class Main
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new BugZap());
     }
-<<<<<<< HEAD
-
-    public void airSeaBattle() {
-        final String[] a = { "MAIN" };
-        processing.core.PApplet.runSketch(a, new AirSeaBattle());
-=======
-    
+ 
     public void sound1()
 	{
 		String[] a = {"MAIN"};
@@ -47,12 +41,9 @@ public class Main
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new AirSeaBattle());
->>>>>>> 3f21efb1b5a9d3d0cbafcc1d042aa89f314fd196
+
     }
 
-<<<<<<< HEAD
-    public void dogsCats() {
-=======
     public void soundMandala()
     {
         String[] a = {"MAIN"};
@@ -61,7 +52,6 @@ public class Main
     
     public void dogsCats()
     {
->>>>>>> b8af229bd5b2fdd3e3f403bbf3333675f3821094
         // Polymorphism means
         // The type is a superclass, the instance is a subclass
 
