@@ -98,6 +98,11 @@ public class Main
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new Middle());
     }
+    
+    public void Magic() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Magic());
+    }
 
 
     public void bugZap() {
@@ -147,6 +152,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-        main.Bright();      
+        main.Magic();      
     }
 }
