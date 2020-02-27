@@ -20,6 +20,12 @@ public class Main
         processing.core.PApplet.runSketch(a, new Loops());
     }
 
+    public void Magic() {
+        final String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new Magic());
+    }
+ 
+
     public void bugZap() {
         final String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new BugZap());
@@ -91,6 +97,6 @@ public class Main
 
     public static void main(String[] arg){
         Main main = new Main();
-		main.sound2();        
+		main.Magic();        
     }
 }
