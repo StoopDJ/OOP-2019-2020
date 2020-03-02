@@ -74,9 +74,9 @@ public class Sound2 extends PApplet
 				, 255
 			);
 			line(i, cy, i, cy + as.left.get(i) * cy);
-			sum += abs(ai.left.get(i));
+			sum += abs(as.left.get(i));
 		}
-		average = sum / ai.bufferSize();
+		average = sum / as.bufferSize();
 
 		float w  = average * 1000;
 		lerpedw = lerp(lerpedw, w, 0.1f);
