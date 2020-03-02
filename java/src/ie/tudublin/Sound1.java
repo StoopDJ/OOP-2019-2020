@@ -8,7 +8,13 @@ public class Sound1 extends PApplet
 {	
 	Minim minim;
 	AudioInput ai;
-	AudioSample as;
+
+	
+	int frameSize = 1024;
+	
+	int sampleRate = 44100;
+
+	FFT fft;
 
 	public void settings()
 	{
@@ -20,7 +26,9 @@ public class Sound1 extends PApplet
 		minim = new Minim(this);
 		ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
 
-		as = minim.loadSample("heroplanet.mp3");
+		
+
+		fft = new FFT(frameSize,sampleRate);
 		//as.trigger();
 		colorMode(HSB);
 		circy = height / 2;
@@ -75,10 +83,22 @@ public class Sound1 extends PApplet
 		}
 		*/
 
-		circy += random(-20, 20);
+		/*circy += random(-20, 20);
 		lerpedcircley = lerp(lerpedcircley, circy, 0.1f);
 		ellipse(100, circy, 50, 50);
 		ellipse(200, lerpedcircley, 50, 50);
+		*/
+
+		
+		fft.window(FFT.HAMMING);
+		fft.forward(ai.left);
+
+		stroke(255);
+
+		for(int i=0; i<fft.specSize(); i++)
+		{
+			line(i, 0, i, fft.getBand(i)*100);
+		}
 		
 	}
 }
