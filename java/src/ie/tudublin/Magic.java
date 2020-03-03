@@ -1,6 +1,8 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import ddf.minim.*;
+import ddf.minim.analysis.FFT;
 
 public class Magic extends PApplet
 {
@@ -8,9 +10,16 @@ public class Magic extends PApplet
     int Csize =300;
     float angle, angle1, angle2;
 
+    Minim minim;
+    AudioSample as;
+    
+    int frameSize = 1024;
+
+	int sampleRate = 44100;
+
 	public void settings()
 	{
-        size(550, 550);
+        size(1024, 550);
 	}
 
 	public void setup() 
@@ -20,28 +29,27 @@ public class Magic extends PApplet
         background(255);
         angle1 = random(PI);
         angle2 = random(PI);
+
+        minim = new Minim(this);
+        as = minim.loadSample("Visuals.mp3", frameSize);
+
+		colorMode(HSB);
     
 	}
-
-	
-	public void keyPressed()
-	{
-		if (key == ' ')
-		{
-			
-		}
-	}	
-
 
 	public void draw()
 	{
 
         angle1 += 0.0013;
         angle2 += 0.0002;
+
         angle = angle1 + angle2;
 
         translate(width/2, height/2);
         rotate(angle2-angle1);
+
+        scale(0.5f* map(mouseY, 0, height,0, 10));
+
 
         for(int j=0; j<2; j++)
         {
