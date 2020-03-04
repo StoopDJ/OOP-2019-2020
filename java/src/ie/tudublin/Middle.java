@@ -31,6 +31,7 @@ public class Middle extends PApplet
 			
 		}
 	}	
+	
 
 
 	public void draw()

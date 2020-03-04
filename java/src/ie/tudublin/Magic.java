@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 import ddf.minim.*;
-import ddf.minim.analysis.FFT;
+
 
 public class Magic extends PApplet
 {
@@ -15,7 +15,12 @@ public class Magic extends PApplet
     
     int frameSize = 1024;
 
-	int sampleRate = 44100;
+    int sampleRate = 44100;
+    
+
+    float lerpedw = 0;
+    float average = 0;
+    float offs = 0;
 
 	public void settings()
 	{
@@ -35,7 +40,9 @@ public class Magic extends PApplet
 
 		colorMode(HSB);
     
-	}
+    }
+    
+   
 
 	public void draw()
 	{
@@ -50,7 +57,19 @@ public class Magic extends PApplet
 
         scale(0.5f* map(mouseY, 0, height,0, 10));
 
-
+        float cy = height / 2;
+		float sum = 0;
+		for(int i = 0 ; i < as.bufferSize() ; i ++)
+		{
+			stroke(
+				map(i, 0, as.bufferSize(), 0, 255)
+				, 255
+				, 255
+			);
+			sum += abs(as.left.get(i));
+		}
+       //average = sum / as.bufferSize();
+        
         for(int j=0; j<2; j++)
         {
             pushMatrix();
