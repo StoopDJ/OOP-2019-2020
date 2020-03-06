@@ -55,7 +55,7 @@ public class Magic extends PApplet
         translate(width/2, height/2);
         rotate(angle2-angle1);
 
-        scale(0.5f* map(mouseY, 0, height,0, 10));
+        scale(1.5f* map(100, 0, height,0, 10));
 
         float cy = height / 2;
 		float sum = 0;
@@ -67,8 +67,9 @@ public class Magic extends PApplet
 				, 255
 			);
 			sum += abs(as.left.get(i));
-		}
-       //average = sum / as.bufferSize();
+        }
+        
+       average = sum / as.bufferSize();
         
         for(int j=0; j<2; j++)
         {
@@ -97,9 +98,6 @@ public class Magic extends PApplet
         if(random(1) <0.5 * (1 + cos(1)))rect (0 +rx,-Csize +ry,r,r);
 
     }
-    public void mousePressed()
-    {
-        noLoop();
-    }
+
 }
 
