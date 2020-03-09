@@ -8,6 +8,11 @@ public class Main
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new SoundSynthesis());
     }
+    public void starMap()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new StarMap());
+    }
     public void helloArrays()
 	{
 		String[] a = {"MAIN"};
@@ -110,9 +115,13 @@ public class Main
 
     public static void main(String[] arg){
         Main main = new Main();
+<<<<<<< HEAD
 
 		main.soundSynthesis();        
 
+=======
+		main.starMap();        
+>>>>>>> 10449debb2cc89acc74fc7f92757175469b0cca5
     }
 }
 
