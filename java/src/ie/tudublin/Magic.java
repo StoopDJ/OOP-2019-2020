@@ -24,7 +24,8 @@ public class Magic extends PApplet
 
 	public void settings()
 	{
-        size(1024, 550);
+        //size(1024, 550);
+        fullScreen();
 	}
 
 	public void setup() 
