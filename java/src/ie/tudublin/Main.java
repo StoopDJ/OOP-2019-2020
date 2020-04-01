@@ -127,14 +127,11 @@ public class Main
 
     public static void main(String[] arg){
         Main main = new Main();
-<<<<<<< HEAD
 
-		main.soundSynthesis();        
+		// main.soundSynthesis();        
 		main.starMap();        
-
-=======
 		main.cafe();        
->>>>>>> 0017d28d50ccce2816eb12a9c15f44a68cc38fe6
+
     }
 }
 
